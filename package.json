@@ -1,6 +1,6 @@
 {
   "name": "validate-id-za",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Validate South African ID Numbers",
   "main": "src/index.js",
   "scripts": {
@@ -8,6 +8,10 @@
     "test:lint": "eslint src",
     "test:runner": "mocha src/*.test.js src/**/*.test.js --require babel-register",
     "test:watch": "yarn test:runner -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/open-sauces/validate-id-za.git"
   },
   "keywords": [
     "id",
