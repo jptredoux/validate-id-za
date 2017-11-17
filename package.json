@@ -2,9 +2,10 @@
   "name": "validate-id-za",
   "version": "1.0.0",
   "description": "Validate South African ID Numbers",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "yarn test:lint && yarn test:runner",
+    "build:production": "babel src --out-dir lib --ignore **/*.test.js,**/.test-context.js",
+    "test": "yarn test:lint && yarn test:runner && npm run build:production",
     "test:lint": "eslint src",
     "test:runner": "mocha src/*.test.js src/**/*.test.js --require babel-register",
     "test:watch": "yarn test:runner -- --watch"
@@ -21,7 +22,7 @@
   "author": "@jtredoux",
   "license": "MIT",
   "devDependencies": {
-    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-stage-0": "^6.16.0",
     "babel-register": "^6.18.0",
     "chai": "^3.5.0",
