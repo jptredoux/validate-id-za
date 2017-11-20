@@ -1,6 +1,6 @@
 {
   "name": "validate-id-za",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Validate South African ID Numbers",
   "main": "lib/index.js",
   "scripts": {
